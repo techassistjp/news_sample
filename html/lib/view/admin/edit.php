@@ -14,21 +14,21 @@
 			<th>日付</th>
 			<td>
 				<p style="color:red"><?php echo @$error['view_date'] ?></p>
-				<input type="text" name="view_date" value="<?php echo $view_date ?>">
+				<input type="text" name="view_date" value="<?php echo $view_date ?>" size="10">
 			</td>
 		</tr>
 		<tr>
 			<th>タイトル</th>
 			<td>
 				<p style="color:red"><?php echo @$error['title'] ?></p>
-				<input type="text" name="title" value="<?php echo $title ?>">
+				<input type="text" name="title" value="<?php echo $title ?>" size="50">
 			</td>
 		</tr>
 		<tr>
 			<th>本文</th>
 			<td>
 				<p style="color:red"><?php echo @$error['body'] ?></p>
-				<textarea name="body"><?php echo $body ?></textarea>
+				<textarea name="body" cols="50" rows="10"><?php echo $body ?></textarea>
 			</td>
 		</tr>
 	</table>
