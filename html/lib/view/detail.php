@@ -21,6 +21,5 @@
 		<td><?php echo nl2br($body) ?></td>
 	</tr>
 </table>
-</form>
 </body>
 </html>
