@@ -15,7 +15,15 @@
 <?php foreach($list as $row){ ?>
 	<tr>
 		<td><?php echo date('Y/m/d',strtotime($row['view_date'])) ?></td>
-		<td><a href="detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?></a></td>
+		<td>
+		<?php if($row['body']){ ?>
+			<a href="detail.php?id=<?php echo $row['id'] ?>">
+		<?php } ?>
+				<?php echo $row['title'] ?>
+		<?php if($row['body']){ ?>
+			</a>
+		<?php } ?>
+		</td>
 	</tr>
 <?php } ?>
 </table>

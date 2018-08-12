@@ -6,6 +6,7 @@ function get_conn(){
 		return $pdo;
 	}catch(PDOException $e){
 		echo $e->getMessage();
+		exit;
 	}
 }
 

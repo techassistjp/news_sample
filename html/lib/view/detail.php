@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1><?php echo $title ?>｜お知らせ記事詳細</h1>
-<p><a href="./">一覧へ戻る</a>
+<p><a href="./">トップページへ戻る</a>
 <table border="1">
 	<tr>
 		<th>日付</th>
